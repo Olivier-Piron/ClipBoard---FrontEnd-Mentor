@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap');
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --DarkStrongCyan: #209F8B;
+  --ShadowCyan: rgba(137, 229, 199, 0.5033);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkLightBlue: #5262D8;
+  --BlackShadow: rgba(0, 0, 0, 0.0988);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  --PureWhite: #fff;
+  --LightGray: #F5F7F7;
+
+  --weight-regular: 400;
+  --weight-semi-bold: 600;
+
+  --transition: 300ms ease-in-out;
+  --border-radius-default: 2.8rem;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../IMG/bg-header-desktop.png);
+  padding: 8rem 3rem 0 3rem;
+}
+
+.header-logo {
+  margin-bottom: 4rem;
+}
+
+.download-buttons {
+  margin-top: 4.8rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.title_2,
+.content-title-2 {
+  color: var(--DarkGrayishBlue);
+  font-size: 1.2rem;
+  max-width: 60vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.content-title {
+  margin-top: -2rem;
+  font-size: 2rem;
+}
+
+.right-text {
+  color: var(--GrayishBlue);
+  margin: 0;
+  margin-bottom: 4rem;
+}
+
+.footer-item {
+  font-weight: var(--weight-regular);
+  color: var(--DarkGrayishBlue);
+  transition: var(--transition) color;
+}
+.footer-item:hover {
+  color: var(--StrongCyan);
+}
+
+.button {
+  padding: 0;
+  margin: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: var(--weight-semi-bold);
+  color: var(--PureWhite);
+  padding: 1rem 0;
+  border-radius: var(--border-radius-default);
+  transition: var(--transition) opacity, var(--transition) transform;
+  width: 20rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+.button--cyan {
+  background-color: var(--StrongCyan);
+  border-bottom: 3px solid var(--DarkStrongCyan);
+  box-shadow: 0 1rem 2rem var(--ShadowCyan);
+}
+.button--blue {
+  background-color: var(--LightBlue);
+  border-bottom: 3px solid var(--DarkLightBlue);
+  box-shadow: 0 1rem 2rem var(--BlackShadow);
+}
+
+.content {
+    margin-top: 5em;
+    margin-bottom: 16rem;
+}
+
+.content-group {
+    margin-top: 5rem;
+}
+
+.content-image {
+  max-width: 80vw;
+}
+
+.right-title  {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+@media(max-width: 1000px) {
+  .image-container {
+    margin-bottom: 5.6rem;
+  }
+}
+@media(min-width: 1000px) {
+  .content-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -4rem;
+  }
+  .flex-right {
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: -5rem;
+    font-size: 1rem;
+    max-width: 30vw;
+
+  }
+}
+
+.anywhere-image {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  max-width: 80vw;
+}
+
+.work-flow-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.work-flow-item {
+  width: 20rem;
+  margin-top: 4rem;
+}
+
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.sponsor {
+  margin: 4rem 2rem 8rem 2rem;
+  transition: var(--transition) filter;
+}
+
+.sponsor:hover {
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+
+.footer {
+  background-color: var(--LightGray);
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem
+}
+
+.footer-icon {
+  max-width: 3rem;
+  margin-top: 1rem;
+}
+
+.footer-item {
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social {
+  margin: 1rem;
+}
+
+.social__icon {
+  transition: var(--transition) fill;
+}
+.social:hover .social__icon {
+  fill: var(--StrongCyan);
+}
+
+
+.frontend-mentor {
+  font-size: 1rem;
+  background-color: var(--LightGray);
+  margin: 0;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.frontend-mentor a {
+  color: var(--StrongCyan);
+  text-decoration: underline;
+}
